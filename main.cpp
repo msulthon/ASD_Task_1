@@ -166,7 +166,19 @@ string group_and_average(int arr[], int n) {
 
     // YOUR CODES HERE
     //-----------------------
-
+        int jumlah ;
+        float average ;
+        for (int i = 0; i < n; i++) {
+            if ( arr[i]%i == 0 ) {
+                for ( int j = i;j < (n-1); j++){
+                    arr[j] = arr [j+1];
+                }
+            }
+            jumlah = jumlah + arr [i]
+        }
+        average = jumlah/n
+                    
+            
 
     //-----------------------
     return "";
